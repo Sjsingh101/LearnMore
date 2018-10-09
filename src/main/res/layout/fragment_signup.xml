@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupFragment"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36dp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic|bold"
+        android:text="SIGNUP"/>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="30dp"
+        android:elevation="10dp">
+        <ImageView
+            android:id="@+id/logo"
+            android:background="@drawable/logo"
+            android:layout_gravity="center"
+            android:layout_height="70dp"
+            android:layout_width="70dp"/>
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/name"
+        android:hint="Name"
+        android:inputType="text"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:hint="Email Address"
+        android:layout_marginTop="30dp"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <EditText
+        android:id="@+id/newpassword"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <EditText
+        android:id="@+id/repassword"
+        android:hint="Re-enter Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+        <Button
+            android:id="@+id/submitdetails"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="SUBMIT"
+            android:layout_marginBottom="10dp"/>
+</LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</FrameLayout>

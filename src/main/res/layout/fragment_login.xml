@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame"
+    tools:context=".LoginFragment"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic|bold"
+        android:text="LOGIN"/>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="30dp"
+        android:elevation="10dp">
+        <ImageView
+            android:id="@+id/logo"
+            android:background="@drawable/logo"
+            android:layout_gravity="center"
+            android:layout_height="70dp"
+            android:layout_width="70dp"/>
+    </android.support.v7.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <EditText
+       android:id="@+id/email"
+       android:hint="Email Address"
+        android:layout_marginTop="30dp"
+       android:inputType="textEmailAddress"
+       android:layout_width="match_parent"
+       android:layout_height="40dp" />
+    <EditText
+        android:id="@+id/password"
+        android:hint="Password"
+        android:layout_marginTop="30dp"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/tv2"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="italic"
+            android:text="*Wrong Password"/>
+        <Button
+            android:id="@+id/loginbtn"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:text="SUBMIT"
+            android:background="@color/colorAccent"/>
+        <Button
+            android:id="@+id/signupbtn"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:text="CREATE A NEW ACCOUNT"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/skip"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="italic"
+            android:text="Skip to CourseList"/>
+</LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</FrameLayout>
